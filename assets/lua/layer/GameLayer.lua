@@ -1,7 +1,4 @@
---关闭按钮
-local function menuCallbackCloseItem()
-	CCDirector:sharedDirector():endToLua()
-end
+
 
 --游戏图层
 GameLayer={
@@ -22,14 +19,6 @@ function GameLayer:createGameLayer()
 	local winSize = CCDirector:sharedDirector():getWinSize()
 	self._instance = CCLayer:create()
 
-
-	--关闭按钮
-	local pCloseItem = CCMenuItemImage:create("images/CloseNormal.png","images/CloseSelected.png" )
-	pCloseItem:setPosition(winSize.width-40,winSize.height-40)
-	pCloseItem:registerScriptTapHandler(menuCallbackCloseItem)
-	local pMenu = CCMenu:createWithItem(pCloseItem)
-	pMenu:setPosition( 0,0 );
-	self._instance :addChild(pMenu, 1);
 	--
 	--初始化地图
 	self:initTileMap();

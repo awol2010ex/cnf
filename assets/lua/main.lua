@@ -1,5 +1,6 @@
 require "lua/Defines"
 require "lua/layer/GameLayer"
+require "lua/layer/HudLayer"
 
 require "lua/sprite/ActionSprite"
 require "lua/sprite/Hero"
@@ -33,8 +34,10 @@ local function main()
 
 	-- run
 	local sceneGame = CCScene:create()
-	local gameLayer =GameLayer:new()
-	sceneGame:addChild(gameLayer:createGameLayer())
+	local gameLayer =GameLayer:new()--游戏层
+	local hudLayer =HudLayer:new()--操作层
+	sceneGame:addChild(gameLayer:createGameLayer(),1)
+	sceneGame:addChild(hudLayer:createHudLayer(),2)
 	CCDirector:sharedDirector():runWithScene(sceneGame)
 end
 
