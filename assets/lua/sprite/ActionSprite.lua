@@ -23,13 +23,9 @@ end
 
 --停留
 function ActionSprite:idle()
-    cclog("ActionSprite:idle1")
 
-    cclog(string.format("%d", ActionState.kActionStateIdle))
-    cclog(string.format("%d", self._actionState))
     
     if ActionState.kActionStateIdle ~=self._actionState then
-        cclog("ActionSprite:idle2")
         self._instance:stopAllActions()
 		self._instance:runAction(self._idleAction)
 		self._actionState = ActionState.kActionStateIdle

@@ -2,39 +2,25 @@
 local function menuCallbackCloseItem()
 	CCDirector:sharedDirector():endToLua()
 end
---初始化地图
-local function initTileMap(gameLayer)
-	local winSize = CCDirector:sharedDirector():getWinSize()
-	local _tileMap = CCTMXTiledMap:create("map/0000000_hotel.tmx");
-	local children =_tileMap:getChildren();
-	_tileMap:setPosition(winSize.width/2-_tileMap:getContentSize().width/2,winSize.height/2-_tileMap:getContentSize().height/2)
-	--抗锯齿
-	for i=0 ,children:count()-1,1 do
-		local pObject =tolua.cast(children:objectAtIndex(i),"CCTMXLayer")
-		pObject:getTexture():setAliasTexParameters()
-	end
 
-	gameLayer:addChild(_tileMap, -6);
+--游戏图层
+GameLayer={
+    _tileMap =nil,--地图
+    _instance =nil ,--图层实例
+    _hero =nil --主角
+};
+--类
+function GameLayer:new(o)
+    o = o or {}   
+    setmetatable(o, self)
+    self.__index = self
+    return o
 end
 
---初始化主角
-local function initHero(gameLayer)
-    local winSize = CCDirector:sharedDirector():getWinSize()
-    
-    local _hero = Hero:new()
-    local _hero_sprite =_hero:createSprite()
-    _hero_sprite:setPosition(winSize.width/2,winSize.height/2)
-    _hero:setDesiredPosition(_hero_sprite:getPosition())
-	
-    gameLayer:addChild(_hero_sprite, -5);
-    cclog("initHero:Hero idle")
-    
-    _hero:idle()
-end
-
-function createGameLayer()
+--创建实例
+function GameLayer:createGameLayer()
 	local winSize = CCDirector:sharedDirector():getWinSize()
-	local gameLayer = CCLayer:create()
+	self._instance = CCLayer:create()
 
 
 	--关闭按钮
@@ -43,13 +29,43 @@ function createGameLayer()
 	pCloseItem:registerScriptTapHandler(menuCallbackCloseItem)
 	local pMenu = CCMenu:createWithItem(pCloseItem)
 	pMenu:setPosition( 0,0 );
-	gameLayer:addChild(pMenu, 1);
+	self._instance :addChild(pMenu, 1);
 	--
 	--初始化地图
-	initTileMap(gameLayer);
+	self:initTileMap();
 
 	--初始主角
-	initHero(gameLayer);
+	self:initHero();
 
-	return gameLayer
+	return self._instance 
 end
+
+--初始化地图
+function GameLayer:initTileMap()
+	local winSize = CCDirector:sharedDirector():getWinSize()
+	self._tileMap = CCTMXTiledMap:create("map/0000000_hotel.tmx");
+	local children =self._tileMap:getChildren();
+	self._tileMap:setPosition(winSize.width/2-self._tileMap:getContentSize().width/2,winSize.height/2-self._tileMap:getContentSize().height/2)
+	--抗锯齿
+	for i=0 ,children:count()-1,1 do
+		local pObject =tolua.cast(children:objectAtIndex(i),"CCTMXLayer")
+		pObject:getTexture():setAliasTexParameters()
+	end
+
+	self._instance :addChild(self._tileMap, -6);
+end
+
+--初始化主角
+function GameLayer:initHero()
+    local winSize = CCDirector:sharedDirector():getWinSize()
+    
+    self._hero = Hero:new()
+    local _hero_sprite =self._hero:createSprite()
+    _hero_sprite:setPosition(winSize.width/2,winSize.height/2)
+    self._hero:setDesiredPosition(_hero_sprite:getPosition())
+	
+    self._instance:addChild(_hero_sprite, -5);
+    
+    self._hero:idle()
+end
+

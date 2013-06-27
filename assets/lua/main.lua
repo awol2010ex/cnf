@@ -33,7 +33,8 @@ local function main()
 
 	-- run
 	local sceneGame = CCScene:create()
-	sceneGame:addChild(createGameLayer())
+	local gameLayer =GameLayer:new()
+	sceneGame:addChild(gameLayer:createGameLayer())
 	CCDirector:sharedDirector():runWithScene(sceneGame)
 end
 
