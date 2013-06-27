@@ -7,7 +7,13 @@ LOCAL_MODULE := game_shared
 LOCAL_MODULE_FILENAME := libgame
 
 LOCAL_SRC_FILES := cnfcpp/main.cpp \
-                   ../Classes/AppDelegate.cpp 
+                   ../Classes/Sneaky/SneakyButton.cpp \
+                   ../Classes/Sneaky/SneakyButtonSkinnedBase.cpp \
+                   ../Classes/Sneaky/SneakyButtonToLua.cpp \
+                   ../Classes/Sneaky/SneakyButtonSkinnedBaseToLua.cpp \
+                   ../Classes/Sneaky/SneakyJoystick.cpp \
+                   ../Classes/Sneaky/SneakyJoystickSkinnedBase.cpp \
+                   ../Classes/AppDelegate.cpp \
                    
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../Classes                   
 
