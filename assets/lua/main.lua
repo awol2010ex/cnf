@@ -1,5 +1,8 @@
+require "lua/Defines"
 require "lua/layer/GameLayer"
 
+require "lua/sprite/ActionSprite"
+require "lua/sprite/Hero"
 -- cclog
 cclog = function(...)
 	print(string.format(...))
