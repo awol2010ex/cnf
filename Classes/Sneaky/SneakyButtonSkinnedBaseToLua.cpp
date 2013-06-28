@@ -1,6 +1,6 @@
 /*
 ** Lua binding: SneakyButtonSkinnedBase
-** Generated automatically by tolua++-1.0.92 on 06/27/13 13:26:10.
+** Generated automatically by tolua++-1.0.92 on 06/28/13 10:33:58.
 */
 
 #ifndef __cplusplus
@@ -11,8 +11,9 @@
 #include "tolua++.h"
 
 #include "cocos2d.h"
+#include "SneakyButton.h"
 #include "SneakyButtonSkinnedBase.h"
-#include "SneakyButtonSkinnedBaseToLua.h"
+using namespace cocos2d;
 
 /* Exported function */
 TOLUA_API int  tolua_SneakyButtonSkinnedBase_open (lua_State* tolua_S);
@@ -31,13 +32,21 @@ static int tolua_collect_SneakyButtonSkinnedBase (lua_State* tolua_S)
 
 
 /* function to register type */
-static void tolua_reg_types (lua_State* tolua_S)
+static void tolua_SneakyButtonSkinnedBase_types (lua_State* tolua_S)
 {
+#ifndef Mtolua_typeid
+#define Mtolua_typeid(L,TI,T)
+#endif
  tolua_usertype(tolua_S,"SneakyButton");
+ Mtolua_typeid(tolua_S,typeid(SneakyButton), "SneakyButton");
+ tolua_usertype(tolua_S,"CCLayer");
+ Mtolua_typeid(tolua_S,typeid(CCLayer), "CCLayer");
+ tolua_usertype(tolua_S,"CCSprite");
+ Mtolua_typeid(tolua_S,typeid(CCSprite), "CCSprite");
  tolua_usertype(tolua_S,"SneakyButtonSkinnedBase");
- tolua_usertype(tolua_S,"cocos2d::CCSize");
- tolua_usertype(tolua_S,"cocos2d::CCSprite");
- tolua_usertype(tolua_S,"cocos2d::CCLayer");
+ Mtolua_typeid(tolua_S,typeid(SneakyButtonSkinnedBase), "SneakyButtonSkinnedBase");
+ tolua_usertype(tolua_S,"CCSize");
+ Mtolua_typeid(tolua_S,typeid(CCSize), "CCSize");
 }
 
 /* method: getDefaultSprite of class  SneakyButtonSkinnedBase */
@@ -59,8 +68,8 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_getDefaultSprit
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDefaultSprite'", NULL);
 #endif
   {
-   cocos2d::CCSprite* tolua_ret = (cocos2d::CCSprite*)  self->getDefaultSprite();
-    tolua_pushusertype(tolua_S,(void*)tolua_ret,"cocos2d::CCSprite");
+   CCSprite* tolua_ret = (CCSprite*)  self->getDefaultSprite();
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"CCSprite");
   }
  }
  return 1;
@@ -91,8 +100,8 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_getActivatedSpr
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getActivatedSprite'", NULL);
 #endif
   {
-   cocos2d::CCSprite* tolua_ret = (cocos2d::CCSprite*)  self->getActivatedSprite();
-    tolua_pushusertype(tolua_S,(void*)tolua_ret,"cocos2d::CCSprite");
+   CCSprite* tolua_ret = (CCSprite*)  self->getActivatedSprite();
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"CCSprite");
   }
  }
  return 1;
@@ -123,8 +132,8 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_getDisabledSpri
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getDisabledSprite'", NULL);
 #endif
   {
-   cocos2d::CCSprite* tolua_ret = (cocos2d::CCSprite*)  self->getDisabledSprite();
-    tolua_pushusertype(tolua_S,(void*)tolua_ret,"cocos2d::CCSprite");
+   CCSprite* tolua_ret = (CCSprite*)  self->getDisabledSprite();
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"CCSprite");
   }
  }
  return 1;
@@ -155,8 +164,8 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_getPressSprite0
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'getPressSprite'", NULL);
 #endif
   {
-   cocos2d::CCSprite* tolua_ret = (cocos2d::CCSprite*)  self->getPressSprite();
-    tolua_pushusertype(tolua_S,(void*)tolua_ret,"cocos2d::CCSprite");
+   CCSprite* tolua_ret = (CCSprite*)  self->getPressSprite();
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"CCSprite");
   }
  }
  return 1;
@@ -330,7 +339,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setContentSize0
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButtonSkinnedBase",0,&tolua_err) ||
-     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"cocos2d::CCSize",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"CCSize",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -338,7 +347,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setContentSize0
 #endif
  {
   SneakyButtonSkinnedBase* self = (SneakyButtonSkinnedBase*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCSize s = *((cocos2d::CCSize*)  tolua_tousertype(tolua_S,2,0));
+  CCSize s = *((CCSize*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setContentSize'", NULL);
 #endif
@@ -363,7 +372,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setDefaultSprit
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButtonSkinnedBase",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCSprite",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCSprite",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -371,7 +380,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setDefaultSprit
 #endif
  {
   SneakyButtonSkinnedBase* self = (SneakyButtonSkinnedBase*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCSprite* aSprite = ((cocos2d::CCSprite*)  tolua_tousertype(tolua_S,2,0));
+  CCSprite* aSprite = ((CCSprite*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setDefaultSprite'", NULL);
 #endif
@@ -396,7 +405,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setActivatedSpr
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButtonSkinnedBase",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCSprite",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCSprite",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -404,7 +413,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setActivatedSpr
 #endif
  {
   SneakyButtonSkinnedBase* self = (SneakyButtonSkinnedBase*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCSprite* aSprite = ((cocos2d::CCSprite*)  tolua_tousertype(tolua_S,2,0));
+  CCSprite* aSprite = ((CCSprite*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setActivatedSprite'", NULL);
 #endif
@@ -429,7 +438,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setDisabledSpri
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButtonSkinnedBase",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCSprite",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCSprite",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -437,7 +446,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setDisabledSpri
 #endif
  {
   SneakyButtonSkinnedBase* self = (SneakyButtonSkinnedBase*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCSprite* aSprite = ((cocos2d::CCSprite*)  tolua_tousertype(tolua_S,2,0));
+  CCSprite* aSprite = ((CCSprite*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setDisabledSprite'", NULL);
 #endif
@@ -462,7 +471,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setPressSprite0
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButtonSkinnedBase",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCSprite",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCSprite",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -470,7 +479,7 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setPressSprite0
 #endif
  {
   SneakyButtonSkinnedBase* self = (SneakyButtonSkinnedBase*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCSprite* aSprite = ((cocos2d::CCSprite*)  tolua_tousertype(tolua_S,2,0));
+  CCSprite* aSprite = ((CCSprite*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'setPressSprite'", NULL);
 #endif
@@ -524,13 +533,13 @@ static int tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_setButton00(lua
 TOLUA_API int tolua_SneakyButtonSkinnedBase_open (lua_State* tolua_S)
 {
  tolua_open(tolua_S);
- tolua_reg_types(tolua_S);
+ tolua_SneakyButtonSkinnedBase_types(tolua_S);
  tolua_module(tolua_S,NULL,0);
  tolua_beginmodule(tolua_S,NULL);
   #ifdef __cplusplus
-  tolua_cclass(tolua_S,"SneakyButtonSkinnedBase","SneakyButtonSkinnedBase","cocos2d::CCLayer",tolua_collect_SneakyButtonSkinnedBase);
+  tolua_cclass(tolua_S,"SneakyButtonSkinnedBase","SneakyButtonSkinnedBase","CCLayer",tolua_collect_SneakyButtonSkinnedBase);
   #else
-  tolua_cclass(tolua_S,"SneakyButtonSkinnedBase","SneakyButtonSkinnedBase","cocos2d::CCLayer",NULL);
+  tolua_cclass(tolua_S,"SneakyButtonSkinnedBase","SneakyButtonSkinnedBase","CCLayer",NULL);
   #endif
   tolua_beginmodule(tolua_S,"SneakyButtonSkinnedBase");
    tolua_function(tolua_S,"getDefaultSprite",tolua_SneakyButtonSkinnedBase_SneakyButtonSkinnedBase_getDefaultSprite00);

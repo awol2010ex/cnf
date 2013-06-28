@@ -13,21 +13,59 @@
 #include "cocos2d.h"
 #include "SneakyButton.h"
 #include "SneakyButtonToLua.h"
+using namespace cocos2d;
 
 /* Exported function */
 TOLUA_API int  tolua_SneakyButton_open (lua_State* tolua_S);
 
 
 /* function to register type */
-static void tolua_reg_types (lua_State* tolua_S)
+static void tolua_SneakyButton_types (lua_State* tolua_S)
 {
+#ifndef Mtolua_typeid
+#define Mtolua_typeid(L,TI,T)
+#endif
  tolua_usertype(tolua_S,"SneakyButton");
- tolua_usertype(tolua_S,"cocos2d::CCTouch");
- tolua_usertype(tolua_S,"cocos2d::CCNode");
- tolua_usertype(tolua_S,"cocos2d::CCTargetedTouchDelegate");
- tolua_usertype(tolua_S,"cocos2d::CCEvent");
- tolua_usertype(tolua_S,"cocos2d::CCRect");
+ Mtolua_typeid(tolua_S,typeid(SneakyButton), "SneakyButton");
+ tolua_usertype(tolua_S,"CCEvent");
+ Mtolua_typeid(tolua_S,typeid(CCEvent), "CCEvent");
+ tolua_usertype(tolua_S,"CCTouch");
+ Mtolua_typeid(tolua_S,typeid(CCTouch), "CCTouch");
+ tolua_usertype(tolua_S,"CCTargetedTouchDelegate");
+ Mtolua_typeid(tolua_S,typeid(CCTargetedTouchDelegate), "CCTargetedTouchDelegate");
+ tolua_usertype(tolua_S,"CCNode");
+ Mtolua_typeid(tolua_S,typeid(CCNode), "CCNode");
+ tolua_usertype(tolua_S,"CCRect");
+ Mtolua_typeid(tolua_S,typeid(CCRect), "CCRect");
 }
+
+/* method: createSneakyButton of class  SneakyButton */
+#ifndef TOLUA_DISABLE_tolua_SneakyButton_SneakyButton_createSneakyButton00
+static int tolua_SneakyButton_SneakyButton_createSneakyButton00(lua_State* tolua_S)
+{
+#ifndef TOLUA_RELEASE
+ tolua_Error tolua_err;
+ if (
+     !tolua_isusertable(tolua_S,1,"SneakyButton",0,&tolua_err) ||
+     !tolua_isnoobj(tolua_S,2,&tolua_err)
+ )
+  goto tolua_lerror;
+ else
+#endif
+ {
+  {
+   SneakyButton* tolua_ret = (SneakyButton*)  SneakyButton::createSneakyButton();
+    tolua_pushusertype(tolua_S,(void*)tolua_ret,"SneakyButton");
+  }
+ }
+ return 1;
+#ifndef TOLUA_RELEASE
+ tolua_lerror:
+ tolua_error(tolua_S,"#ferror in function 'createSneakyButton'.",&tolua_err);
+ return 0;
+#endif
+}
+#endif //#ifndef TOLUA_DISABLE
 
 /* method: getStatus of class  SneakyButton */
 #ifndef TOLUA_DISABLE_tolua_SneakyButton_SneakyButton_getStatus00
@@ -455,7 +493,7 @@ static int tolua_SneakyButton_SneakyButton_initWithRect00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButton",0,&tolua_err) ||
-     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"cocos2d::CCRect",0,&tolua_err)) ||
+     (tolua_isvaluenil(tolua_S,2,&tolua_err) || !tolua_isusertype(tolua_S,2,"CCRect",0,&tolua_err)) ||
      !tolua_isnoobj(tolua_S,3,&tolua_err)
  )
   goto tolua_lerror;
@@ -463,7 +501,7 @@ static int tolua_SneakyButton_SneakyButton_initWithRect00(lua_State* tolua_S)
 #endif
  {
   SneakyButton* self = (SneakyButton*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCRect rect = *((cocos2d::CCRect*)  tolua_tousertype(tolua_S,2,0));
+  CCRect rect = *((CCRect*)  tolua_tousertype(tolua_S,2,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'initWithRect'", NULL);
 #endif
@@ -555,8 +593,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchBegan00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButton",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCTouch",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"cocos2d::CCEvent",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCTouch",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,3,"CCEvent",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -564,8 +602,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchBegan00(lua_State* tolua_S)
 #endif
  {
   SneakyButton* self = (SneakyButton*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCTouch* touch = ((cocos2d::CCTouch*)  tolua_tousertype(tolua_S,2,0));
-  cocos2d::CCEvent* event = ((cocos2d::CCEvent*)  tolua_tousertype(tolua_S,3,0));
+  CCTouch* touch = ((CCTouch*)  tolua_tousertype(tolua_S,2,0));
+  CCEvent* event = ((CCEvent*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'ccTouchBegan'", NULL);
 #endif
@@ -591,8 +629,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchMoved00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButton",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCTouch",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"cocos2d::CCEvent",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCTouch",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,3,"CCEvent",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -600,8 +638,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchMoved00(lua_State* tolua_S)
 #endif
  {
   SneakyButton* self = (SneakyButton*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCTouch* touch = ((cocos2d::CCTouch*)  tolua_tousertype(tolua_S,2,0));
-  cocos2d::CCEvent* event = ((cocos2d::CCEvent*)  tolua_tousertype(tolua_S,3,0));
+  CCTouch* touch = ((CCTouch*)  tolua_tousertype(tolua_S,2,0));
+  CCEvent* event = ((CCEvent*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'ccTouchMoved'", NULL);
 #endif
@@ -626,8 +664,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchEnded00(lua_State* tolua_S)
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButton",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCTouch",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"cocos2d::CCEvent",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCTouch",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,3,"CCEvent",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -635,8 +673,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchEnded00(lua_State* tolua_S)
 #endif
  {
   SneakyButton* self = (SneakyButton*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCTouch* touch = ((cocos2d::CCTouch*)  tolua_tousertype(tolua_S,2,0));
-  cocos2d::CCEvent* event = ((cocos2d::CCEvent*)  tolua_tousertype(tolua_S,3,0));
+  CCTouch* touch = ((CCTouch*)  tolua_tousertype(tolua_S,2,0));
+  CCEvent* event = ((CCEvent*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'ccTouchEnded'", NULL);
 #endif
@@ -661,8 +699,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchCancelled00(lua_State* tolua_S
  tolua_Error tolua_err;
  if (
      !tolua_isusertype(tolua_S,1,"SneakyButton",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,2,"cocos2d::CCTouch",0,&tolua_err) ||
-     !tolua_isusertype(tolua_S,3,"cocos2d::CCEvent",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,2,"CCTouch",0,&tolua_err) ||
+     !tolua_isusertype(tolua_S,3,"CCEvent",0,&tolua_err) ||
      !tolua_isnoobj(tolua_S,4,&tolua_err)
  )
   goto tolua_lerror;
@@ -670,8 +708,8 @@ static int tolua_SneakyButton_SneakyButton_ccTouchCancelled00(lua_State* tolua_S
 #endif
  {
   SneakyButton* self = (SneakyButton*)  tolua_tousertype(tolua_S,1,0);
-  cocos2d::CCTouch* touch = ((cocos2d::CCTouch*)  tolua_tousertype(tolua_S,2,0));
-  cocos2d::CCEvent* event = ((cocos2d::CCEvent*)  tolua_tousertype(tolua_S,3,0));
+  CCTouch* touch = ((CCTouch*)  tolua_tousertype(tolua_S,2,0));
+  CCEvent* event = ((CCEvent*)  tolua_tousertype(tolua_S,3,0));
 #ifndef TOLUA_RELEASE
   if (!self) tolua_error(tolua_S,"invalid 'self' in function 'ccTouchCancelled'", NULL);
 #endif
@@ -750,18 +788,18 @@ static int tolua_SneakyButton_SneakyButton_touchDelegateRetain00(lua_State* tolu
 }
 #endif //#ifndef TOLUA_DISABLE
 
-/* get function: __cocos2d of class  SneakyButton */
-#ifndef TOLUA_DISABLE_tolua_get_SneakyButton___cocos2d__CCTargetedTouchDelegate__
-static int tolua_get_SneakyButton___cocos2d__CCTargetedTouchDelegate__(lua_State* tolua_S)
+/* get function: __CCTargetedTouchDelegate__ of class  SneakyButton */
+#ifndef TOLUA_DISABLE_tolua_get_SneakyButton___CCTargetedTouchDelegate__
+static int tolua_get_SneakyButton___CCTargetedTouchDelegate__(lua_State* tolua_S)
 {
   SneakyButton* self = (SneakyButton*)  tolua_tousertype(tolua_S,1,0);
 #ifndef TOLUA_RELEASE
-  if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable '__cocos2d'",NULL);
+  if (!self) tolua_error(tolua_S,"invalid 'self' in accessing variable '__CCTargetedTouchDelegate__'",NULL);
 #endif
 #ifdef __cplusplus
-   tolua_pushusertype(tolua_S,(void*)static_cast<cocos2d::CCTargetedTouchDelegate*>(self), "cocos2d::CCTargetedTouchDelegate");
+   tolua_pushusertype(tolua_S,(void*)static_cast<CCTargetedTouchDelegate*>(self), "CCTargetedTouchDelegate");
 #else
-   tolua_pushusertype(tolua_S,(void*)((cocos2d::CCTargetedTouchDelegate*)self), "cocos2d::CCTargetedTouchDelegate");
+   tolua_pushusertype(tolua_S,(void*)((CCTargetedTouchDelegate*)self), "CCTargetedTouchDelegate");
 #endif
  return 1;
 }
@@ -771,11 +809,12 @@ static int tolua_get_SneakyButton___cocos2d__CCTargetedTouchDelegate__(lua_State
 TOLUA_API int tolua_SneakyButton_open (lua_State* tolua_S)
 {
  tolua_open(tolua_S);
- tolua_reg_types(tolua_S);
+ tolua_SneakyButton_types(tolua_S);
  tolua_module(tolua_S,NULL,0);
  tolua_beginmodule(tolua_S,NULL);
-  tolua_cclass(tolua_S,"SneakyButton","SneakyButton","cocos2d::CCNode",NULL);
+  tolua_cclass(tolua_S,"SneakyButton","SneakyButton","CCNode",NULL);
   tolua_beginmodule(tolua_S,"SneakyButton");
+   tolua_function(tolua_S,"createSneakyButton",tolua_SneakyButton_SneakyButton_createSneakyButton00);
    tolua_function(tolua_S,"getStatus",tolua_SneakyButton_SneakyButton_getStatus00);
    tolua_function(tolua_S,"setStatus",tolua_SneakyButton_SneakyButton_setStatus00);
    tolua_function(tolua_S,"getIsActive",tolua_SneakyButton_SneakyButton_getIsActive00);
@@ -798,7 +837,7 @@ TOLUA_API int tolua_SneakyButton_open (lua_State* tolua_S)
    tolua_function(tolua_S,"ccTouchCancelled",tolua_SneakyButton_SneakyButton_ccTouchCancelled00);
    tolua_function(tolua_S,"touchDelegateRelease",tolua_SneakyButton_SneakyButton_touchDelegateRelease00);
    tolua_function(tolua_S,"touchDelegateRetain",tolua_SneakyButton_SneakyButton_touchDelegateRetain00);
-   tolua_variable(tolua_S,"__cocos2d__CCTargetedTouchDelegate__",tolua_get_SneakyButton___cocos2d__CCTargetedTouchDelegate__,NULL);
+   tolua_variable(tolua_S,"__CCTargetedTouchDelegate__",tolua_get_SneakyButton___CCTargetedTouchDelegate__,NULL);
   tolua_endmodule(tolua_S);
  tolua_endmodule(tolua_S);
  return 1;
@@ -810,4 +849,3 @@ TOLUA_API int tolua_SneakyButton_open (lua_State* tolua_S)
  return tolua_SneakyButton_open(tolua_S);
 };
 #endif
-

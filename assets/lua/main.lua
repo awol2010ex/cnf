@@ -19,7 +19,6 @@ end
 
 local function main()
 
-
 	-- avoid memory leak
 	collectgarbage("setpause", 100)
 	collectgarbage("setstepmul", 5000)

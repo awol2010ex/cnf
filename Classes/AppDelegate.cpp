@@ -46,7 +46,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	tolua_extensions_ccb_open(tolua_s);
 
 	//新增定义
+	pStack = pEngine->getLuaStack();
+	tolua_s = pStack->getLuaState();
 	tolua_SneakyButton_open(tolua_s);//摇杆按钮
+
+	pStack = pEngine->getLuaStack();
+	tolua_s = pStack->getLuaState();
 	tolua_SneakyButtonSkinnedBase_open(tolua_s);//摇杆按钮
 	//
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)

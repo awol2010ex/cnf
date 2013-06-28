@@ -4,6 +4,7 @@
 extern "C" {
 #endif
 #include "tolua++.h"
+#include "tolua_fix.h"
 #ifdef __cplusplus
 }
 #endif

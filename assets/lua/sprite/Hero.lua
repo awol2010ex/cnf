@@ -11,7 +11,7 @@ function Hero:createSprite()
     local  idleFrames = CCArray:create()
     for i=0 , 7 ,1 do
        local frameName =string.format("saber_idle%d.png", i)
-       cclog(frameName)
+       --cclog(frameName)
        local frame = CCSpriteFrameCache:sharedSpriteFrameCache():spriteFrameByName(frameName)
        idleFrames:addObject(frame)
     end

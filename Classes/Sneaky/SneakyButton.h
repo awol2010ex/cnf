@@ -11,7 +11,10 @@ protected:
 	float radiusSq;
 
 	cocos2d::CCRect bounds;
-
+public:
+	SneakyButton(void);
+	~SneakyButton(void);
+	static SneakyButton* createSneakyButton();
 	CC_SYNTHESIZE(bool, status, Status);
 	CC_SYNTHESIZE_READONLY(bool, active, IsActive);
 	CC_SYNTHESIZE_READONLY(bool, value, Value);

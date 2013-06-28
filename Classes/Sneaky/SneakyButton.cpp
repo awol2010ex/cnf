@@ -1,6 +1,16 @@
 #include "SneakyButton.h"
 
 using namespace cocos2d;
+SneakyButton::SneakyButton(void) {
+}
+
+SneakyButton::~SneakyButton(void) {
+}
+
+
+SneakyButton* SneakyButton::createSneakyButton(){
+	return new SneakyButton();
+}
 
 void SneakyButton::onEnterTransitionDidFinish()
 {

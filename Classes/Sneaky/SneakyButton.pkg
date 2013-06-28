@@ -1,10 +1,9 @@
 
 
-class SneakyButton : public cocos2d::CCNode, 
-	public cocos2d::CCTargetedTouchDelegate
+class SneakyButton : public CCNode, 
+	public CCTargetedTouchDelegate
 {
-protected:
-
+    static SneakyButton* createSneakyButton();
 	bool getStatus();
 	void setStatus(bool s);
 	bool getIsActive();
@@ -20,13 +19,13 @@ protected:
 	//Public methods
 	virtual void onEnterTransitionDidFinish();
 	virtual void onExit();
-	bool initWithRect(cocos2d::CCRect rect);
+	bool initWithRect(CCRect rect);
 	void limiter(float delta);
 	void setRadius(float r);
-	virtual bool ccTouchBegan(cocos2d::CCTouch *touch, cocos2d::CCEvent *event);
-	virtual void ccTouchMoved(cocos2d::CCTouch *touch, cocos2d::CCEvent *event);
-	virtual void ccTouchEnded(cocos2d::CCTouch *touch, cocos2d::CCEvent *event);
-	virtual void ccTouchCancelled(cocos2d::CCTouch *touch, cocos2d::CCEvent *event);
+	virtual bool ccTouchBegan(CCTouch *touch, CCEvent *event);
+	virtual void ccTouchMoved(CCTouch *touch, CCEvent *event);
+	virtual void ccTouchEnded(CCTouch *touch, CCEvent *event);
+	virtual void ccTouchCancelled(CCTouch *touch, CCEvent *event);
 
 	void touchDelegateRelease();
 	void touchDelegateRetain();
