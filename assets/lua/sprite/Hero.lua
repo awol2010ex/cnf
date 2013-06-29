@@ -1,10 +1,12 @@
 
-
-Hero = ActionSprite:new()
+Hero=class("Hero",function()
+	return ActionSprite:_create()
+end)
+Hero.__index=Hero
 
 --生成精灵
-function Hero:createSprite()
-    
+function Hero:_init()
+    ActionSprite._init(self)
     CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("sprite/saber.plist")
     
     --站立动作
@@ -23,4 +25,10 @@ function Hero:createSprite()
     
     
     return self._instance
+end
+
+function Hero:_create()
+	local o=Hero:new()
+	o:_init()
+	return o
 end

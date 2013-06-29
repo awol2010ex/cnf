@@ -48,12 +48,11 @@ end
 function GameLayer:initHero()
     local winSize = CCDirector:sharedDirector():getWinSize()
     
-    self._hero = Hero:new()
-    local _hero_sprite =self._hero:createSprite()
-    _hero_sprite:setPosition(winSize.width/2,winSize.height/2)
-    self._hero:setDesiredPosition(_hero_sprite:getPosition())
+    self._hero = Hero:_create()
+    self._hero :setPosition(winSize.width/2,winSize.height/2)
+    self._hero:setDesiredPosition(self._hero :getPosition())
 	
-    self._instance:addChild(_hero_sprite, -5);
+    self._instance:addChild(self._hero , -5);
     
     self._hero:idle()
 end
