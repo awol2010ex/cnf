@@ -10,33 +10,24 @@ JOYSTICK_DEAD_RADIUS =10
 JOYSTICK_THRESHOLD =0.4
 
 --操作图层
-HudLayer={
-	mButtonA=nil --按钮A
-	,mJoystick =nil --摇杆
-};
+HudLayer=class("HudLayer",function()
+	return CCLayer:create()
+end)
+HudLayer.__index=HudLayer
 
---类
-function HudLayer:new(o)
-	o = o or {}
-	setmetatable(o, self)
-	self.__index = self
-	return o
-end
+function HudLayer:_init()
+    local winSize = CCDirector:sharedDirector():getWinSize()
 
-
---创建实例
-function HudLayer:createHudLayer()
-	local winSize = CCDirector:sharedDirector():getWinSize()
-	self._instance = CCLayer:create()
-
-
+    self.mButtonA=nil --按钮A
+	self.mJoystick =nil --摇杆
+	
 	--关闭按钮
 	local pCloseItem = CCMenuItemImage:create("images/CloseNormal.png","images/CloseSelected.png" )
 	pCloseItem:setPosition(winSize.width-40,winSize.height-40)
 	pCloseItem:registerScriptTapHandler(menuCallbackCloseItem)
 	local pMenu = CCMenu:createWithItem(pCloseItem)
 	pMenu:setPosition( 0,0 );
-	self._instance :addChild(pMenu, 1);
+	self:addChild(pMenu, 1);
 	--
 	--local  proxy = CCBProxy:create()
 	--按钮A
@@ -44,7 +35,8 @@ function HudLayer:createHudLayer()
 	self.mButtonA:initWithRect(CCRectMake(0,0,0,0));
 	self.mButtonA:setIsToggleable(false);
 	self.mButtonA:setIsHoldable(true);
-
+	
+	
 	CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("UI.plist")
 
 	local btnASkin =SneakyButtonSkinnedBase:create()
@@ -59,9 +51,10 @@ function HudLayer:createHudLayer()
 	CCSprite:createWithSpriteFrameName("button-activated.png"))
 	btnASkin:setButton(self.mButtonA);
 
-	self._instance :addChild(btnASkin)
-
-
+	self:addChild(btnASkin)
+	
+	
+	
 	--摇杆
 	self.mJoystick =  SneakyJoystick:createSneakyJoystick()
 	self.mJoystick:initWithRect(CCRectMake(0,0,0,0))
@@ -78,10 +71,16 @@ function HudLayer:createHudLayer()
 	jstickSkin:getBackgroundSprite():setScale(2.0);
 	jstickSkin:setPosition(JOYSTICK_POS_X, JOYSTICK_POS_Y)
 	jstickSkin:setJoystick(self.mJoystick)
-	self._instance :addChild(jstickSkin)
-	
-	return self._instance
+	self:addChild(jstickSkin)
 end
+--创建实例
+function HudLayer:_create()
+	local o=HudLayer:new()
+	o:_init()
+	return o
+end
+
+
 
 
 function HudLayer:getInBtnState()

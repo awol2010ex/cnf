@@ -8,7 +8,7 @@ function GameScene:_init()
 	self._hudLayer =HudLayer:new()--操作层
 
 	self:addChild(self._gameLayer:createGameLayer(),1)
-	self:addChild(self._hudLayer:createHudLayer(),2)
+	self:addChild(self._hudLayer:_create(),2)
 
 end
 
