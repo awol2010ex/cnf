@@ -58,3 +58,9 @@ function GameLayer:initHero()
     self._hero:idle()
 end
 
+function GameLayer:setInBtnState(pBtnState)
+    if pBtnState==InBtnState.IN_BTN_PRESSED then 
+			cclog("press A")
+	end
+end
+

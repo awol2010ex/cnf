@@ -19,3 +19,7 @@ ActionState={
 }
 
 ActionState =CreatEnumTable(ActionState)
+
+
+InBtnState= {"IN_BTN_PRESSED", "IN_BTN_NO_PRESSED"}
+InBtnState =CreatEnumTable(InBtnState)

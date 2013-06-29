@@ -82,3 +82,14 @@ function HudLayer:createHudLayer()
 	
 	return self._instance
 end
+
+
+function HudLayer:getInBtnState()
+    local retState =InBtnState.IN_BTN_NO_PRESSED
+    
+    
+    if self.mButtonA:getIsActive() then
+		retState =InBtnState.IN_BTN_PRESSED
+    end
+	return retState
+end
