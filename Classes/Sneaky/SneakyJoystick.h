@@ -5,11 +5,12 @@
 
 class SneakyJoystick : public cocos2d::CCNode, public cocos2d::CCTargetedTouchDelegate 
 {
-protected:
+public:
 	float joystickRadiusSq;
 	float thumbRadiusSq;
 	float deadRadiusSq;
-
+	SneakyJoystick();
+	static SneakyJoystick* createSneakyJoystick();
 	CC_SYNTHESIZE_READONLY(cocos2d::CCPoint, stickPosition, StickPosition);
 	CC_SYNTHESIZE_READONLY(float, degrees, Degrees);
 	CC_SYNTHESIZE_READONLY(cocos2d::CCPoint, velocity, Velocity);
@@ -39,7 +40,7 @@ protected:
 	void touchDelegateRelease();
 	void touchDelegateRetain();
 	void updateVelocity(cocos2d::CCPoint point);
-private:
+
 
 	void setTouchRadius();
 

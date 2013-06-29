@@ -10,6 +10,13 @@ using namespace cocos2d;
 SneakyJoystick::~SneakyJoystick()
 {
 }
+SneakyJoystick::SneakyJoystick()
+{
+}
+
+SneakyJoystick* SneakyJoystick::createSneakyJoystick(){
+	return new SneakyJoystick();
+}
 
 bool SneakyJoystick::initWithRect(CCRect rect)
 {
@@ -173,5 +180,7 @@ void SneakyJoystick::touchDelegateRetain()
 	this->retain();
 }
 
+void SneakyJoystick::setTouchRadius(){
 
+}
 

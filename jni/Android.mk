@@ -13,6 +13,7 @@ LOCAL_SRC_FILES := cnfcpp/main.cpp \
                    ../Classes/Sneaky/SneakyButtonSkinnedBaseToLua.cpp \
                    ../Classes/Sneaky/SneakyJoystick.cpp \
                    ../Classes/Sneaky/SneakyJoystickSkinnedBase.cpp \
+				   ../Classes/Sneaky/SneakyJoystickToLua.cpp \
                    ../Classes/AppDelegate.cpp \
                    
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../Classes                   

@@ -1,0 +1,47 @@
+
+
+class SneakyJoystick : public CCNode, public CCTargetedTouchDelegate 
+{
+
+    SneakyJoystick();
+	static SneakyJoystick* createSneakyJoystick();
+
+    CCPoint getStickPosition();
+    float getDegrees();
+    CCPoint getVelocity();
+    bool getAutoCenter();
+    void setAutoCenter(bool b);
+    
+    bool getIsDPad();
+    
+    bool getHasDeadzone();
+    void setHasDeadzone(bool b);
+    
+    
+    int getNumberOfDirections();
+    void setNumberOfDirections(int b);
+    
+    float getJoystickRadius();
+    float getThumbRadius();
+    float getDeadRadius();
+	virtual ~SneakyJoystick();
+
+	bool initWithRect(CCRect rect);
+	virtual void onEnterTransitionDidFinish();
+	virtual void onExit();
+	void setIsDPad(bool b);
+	void setJoystickRadius(float r);
+	void setThumbRadius(float r);
+	void setDeadRadius(float r);
+	virtual bool ccTouchBegan(CCTouch *touch, CCEvent *event);
+	virtual void ccTouchMoved(CCTouch *touch, CCEvent *event);
+	virtual void ccTouchEnded(CCTouch *touch, CCEvent *event);
+	virtual void ccTouchCancelled(CCTouch *touch,CCEvent *event);
+
+	void touchDelegateRelease();
+	void touchDelegateRetain();
+	void updateVelocity(CCPoint point);
+
+	void setTouchRadius();
+
+};
