@@ -4,15 +4,15 @@ end)
 GameScene.__index=GameScene
 
 function GameScene:_init()
-	self._gameLayer =GameLayer:new()--游戏层
-	self._hudLayer =HudLayer:new()--操作层
+	self._gameLayer =GameLayer._create()--游戏层
+	self._hudLayer =HudLayer._create()--操作层
 
-	self:addChild(self._gameLayer:createGameLayer(),1)
-	self:addChild(self._hudLayer:_create(),2)
+	self:addChild(self._gameLayer,1)
+	self:addChild(self._hudLayer,2)
 
 end
 
-function GameScene:_create()
+function GameScene._create()
 	local o=GameScene:new()
 	o:_init()
 	return o

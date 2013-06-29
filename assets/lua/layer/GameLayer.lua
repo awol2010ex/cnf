@@ -1,23 +1,16 @@
 
 
 --游戏图层
-GameLayer={
-    _tileMap =nil,--地图
-    _instance =nil ,--图层实例
-    _hero =nil --主角
-};
---类
-function GameLayer:new(o)
-    o = o or {}   
-    setmetatable(o, self)
-    self.__index = self
-    return o
-end
+GameLayer=class("GameLayer",function()
+	return CCLayer:create()
+end)
+GameLayer.__index=GameLayer
 
---创建实例
-function GameLayer:createGameLayer()
+function GameLayer:_init()
 	local winSize = CCDirector:sharedDirector():getWinSize()
-	self._instance = CCLayer:create()
+	self._tileMap =nil--地图
+	self._instance =nil --图层实例
+	self._hero =nil --主角
 
 	--
 	--初始化地图
@@ -26,7 +19,14 @@ function GameLayer:createGameLayer()
 	--初始主角
 	self:initHero();
 
-	return self._instance 
+end
+
+
+--创建实例
+function GameLayer._create()
+	local o=GameLayer:new()
+	o:_init()
+	return o
 end
 
 --初始化地图
@@ -41,25 +41,25 @@ function GameLayer:initTileMap()
 		pObject:getTexture():setAliasTexParameters()
 	end
 
-	self._instance :addChild(self._tileMap, -6);
+	self:addChild(self._tileMap, -6);
 end
 
 --初始化主角
 function GameLayer:initHero()
-    local winSize = CCDirector:sharedDirector():getWinSize()
-    
-    self._hero = Hero:_create()
-    self._hero :setPosition(winSize.width/2,winSize.height/2)
-    self._hero:setDesiredPosition(self._hero :getPosition())
-	
-    self._instance:addChild(self._hero , -5);
-    
-    self._hero:idle()
+	local winSize = CCDirector:sharedDirector():getWinSize()
+
+	self._hero = Hero:_create()
+	self._hero :setPosition(winSize.width/2,winSize.height/2)
+	self._hero:setDesiredPosition(self._hero :getPosition())
+
+	self:addChild(self._hero , -5);
+
+	self._hero:idle()
 end
 
 function GameLayer:setInBtnState(pBtnState)
-    if pBtnState==InBtnState.IN_BTN_PRESSED then 
-			cclog("press A")
+	if pBtnState==InBtnState.IN_BTN_PRESSED then
+		cclog("press A")
 	end
 end
 

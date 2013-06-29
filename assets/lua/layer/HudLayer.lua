@@ -74,7 +74,7 @@ function HudLayer:_init()
 	self:addChild(jstickSkin)
 end
 --创建实例
-function HudLayer:_create()
+function HudLayer._create()
 	local o=HudLayer:new()
 	o:_init()
 	return o

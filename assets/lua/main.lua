@@ -33,7 +33,7 @@ local function main()
 
 
 	-- run
-	CCDirector:sharedDirector():runWithScene(GameScene:_create())
+	CCDirector:sharedDirector():runWithScene(GameScene._create())
 end
 
 xpcall(main, __G__TRACKBACK__)
