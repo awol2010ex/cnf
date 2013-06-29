@@ -9,6 +9,7 @@
 #include "Sneaky/SneakyButtonToLua.h"
 #include "Sneaky/SneakyButtonSkinnedBaseToLua.h"
 #include "Sneaky/SneakyJoystickToLua.h"
+#include "Sneaky/SneakyJoystickSkinnedBaseToLua.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 #include "Lua_web_socket.h"
@@ -60,6 +61,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	pStack = pEngine->getLuaStack();
 	tolua_s = pStack->getLuaState();
 	tolua_SneakyJoystick_open(tolua_s); //摇杆
+
+	pStack = pEngine->getLuaStack();
+	tolua_s = pStack->getLuaState();
+	tolua_SneakyJoystickSkinnedBase_open(tolua_s); //摇杆
+
 	//
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
 	pStack = pEngine->getLuaStack();

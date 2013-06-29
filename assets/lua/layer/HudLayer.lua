@@ -3,9 +3,16 @@
 local function menuCallbackCloseItem()
 	CCDirector:sharedDirector():endToLua()
 end
+
+JOYSTICK_POS_X = 100
+JOYSTICK_POS_Y = 100
+JOYSTICK_DEAD_RADIUS =10
+JOYSTICK_THRESHOLD =0.4
+
 --操作图层
 HudLayer={
 	mButtonA=nil --按钮A
+	,mJoystick =nil --摇杆
 };
 
 --类
@@ -38,7 +45,7 @@ function HudLayer:createHudLayer()
 	self.mButtonA:setIsToggleable(false);
 	self.mButtonA:setIsHoldable(true);
 
-    CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("UI.plist")
+	CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("UI.plist")
 
 	local btnASkin =SneakyButtonSkinnedBase:create()
 	btnASkin:autorelease()
@@ -52,7 +59,26 @@ function HudLayer:createHudLayer()
 	CCSprite:createWithSpriteFrameName("button-activated.png"))
 	btnASkin:setButton(self.mButtonA);
 
-    self._instance :addChild(btnASkin)
+	self._instance :addChild(btnASkin)
 
+
+	--摇杆
+	self.mJoystick =  SneakyJoystick:createSneakyJoystick()
+	self.mJoystick:initWithRect(CCRectMake(0,0,0,0))
+	self.mJoystick:setAutoCenter(true)
+	self.mJoystick:setHasDeadzone(true)
+	self.mJoystick:setDeadRadius(JOYSTICK_DEAD_RADIUS)
+	
+	local jstickSkin = SneakyJoystickSkinnedBase:create()
+	jstickSkin:autorelease()
+	jstickSkin:init()
+	jstickSkin:setBackgroundSprite(CCSprite:createWithSpriteFrameName("JoyStick-base.png"))
+	jstickSkin:setThumbSprite(CCSprite:createWithSpriteFrameName("JoyStick-thumb.png"))
+	jstickSkin:getThumbSprite():setScale(2.0)
+	jstickSkin:getBackgroundSprite():setScale(2.0);
+	jstickSkin:setPosition(JOYSTICK_POS_X, JOYSTICK_POS_Y)
+	jstickSkin:setJoystick(self.mJoystick)
+	self._instance :addChild(jstickSkin)
+	
 	return self._instance
 end

@@ -1,0 +1,17 @@
+
+
+class SneakyJoystickSkinnedBase : public CCLayer
+{
+    CCSprite * getBackgroundSprite();
+    CCSprite * getThumbSprite();
+    SneakyJoystick * getJoystick();
+
+	static SneakyJoystickSkinnedBase* create();
+	virtual ~SneakyJoystickSkinnedBase();
+	bool init();
+	void updatePositions(float delta);
+	void setContentSize(CCSize s);
+	void setBackgroundSprite(CCSprite *aSprite);
+	void setThumbSprite(CCSprite *aSprite);
+	void setJoystick(SneakyJoystick *aJoystick);
+};
