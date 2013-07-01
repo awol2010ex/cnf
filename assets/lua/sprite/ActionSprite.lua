@@ -1,6 +1,6 @@
 --活动的精灵
-ActionSprite=class("ActionSprite",function()
-	return CCSprite:create()
+ActionSprite=class("ActionSprite",function(_frameName)
+	return CCSprite:createWithSpriteFrameName(_frameName)
 end)
 ActionSprite.__index=ActionSprite
 
@@ -16,9 +16,10 @@ function ActionSprite:_init()
 	self._velocity = CCPointMake(0,0)
 	self._desiredPosition =CCPointMake(0,0)
 end
-function ActionSprite:_create()
-	local o=ActionSprite:new()
+function ActionSprite._createWithSpriteFrameName(_frameName)
+	local o=ActionSprite.new(_frameName)
 	o:_init()
+	o:autorelease();
 	return o
 end
 --停留

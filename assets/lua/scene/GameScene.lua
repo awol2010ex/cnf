@@ -10,6 +10,15 @@ function GameScene:_init()
 	self:addChild(self._gameLayer,1)
 	self:addChild(self._hudLayer,2)
 
+
+    local that =self
+    --按钮更新
+    local function broadcastInput(dt)
+        that._gameLayer:setInBtnState(that._hudLayer:getInBtnState())
+    end
+    
+    
+    self:scheduleUpdateWithPriorityLua(broadcastInput,0)
 end
 
 function GameScene._create()
@@ -18,7 +27,3 @@ function GameScene._create()
 	return o
 end
 
-function GameScene:broadcastInput(dt)
-
-	self._gameLayer:setInBtnState(self._hudLayer:getInBtnState())
-end
