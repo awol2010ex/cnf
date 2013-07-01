@@ -1,12 +1,13 @@
 require "lua/extern"
 require "lua/Defines"
+
+require "lua/scene/GameScene"
 require "lua/layer/GameLayer"
 require "lua/layer/HudLayer"
 
 require "lua/sprite/ActionSprite"
-require "lua/sprite/Hero"
+require "lua/sprite/Saber"
 
-require "lua/scene/GameScene"
 -- cclog
 cclog = function(...)
 	print(string.format(...))

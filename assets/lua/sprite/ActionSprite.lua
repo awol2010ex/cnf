@@ -19,7 +19,6 @@ end
 function ActionSprite._createWithSpriteFrameName(_frameName)
 	local o=ActionSprite.new(_frameName)
 	o:_init()
-	o:autorelease();
 	return o
 end
 --停留

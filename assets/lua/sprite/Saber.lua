@@ -1,12 +1,12 @@
 
-Hero=class("Hero",function()
+Saber=class("Saber",function()
     CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("sprite/saber.plist")
 	return ActionSprite._createWithSpriteFrameName("saber_idle0.png")
 end)
-Hero.__index=Hero
+Saber.__index=Saber
 
 --生成精灵
-function Hero:_init()
+function Saber:_init()
     ActionSprite._init(self)
     
     
@@ -35,8 +35,8 @@ function Hero:_init()
 	self._walkAction= CCRepeatForever:create(CCAnimate:create(walkAnimation))
 end
 
-function Hero:_create()
-	local o=Hero:new()
+function Saber:_create()
+	local o=Saber:new()
 	o:_init()
 	return o
 end

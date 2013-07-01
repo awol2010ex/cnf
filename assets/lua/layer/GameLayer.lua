@@ -47,8 +47,8 @@ end
 --初始化主角
 function GameLayer:initHero()
 	local winSize = CCDirector:sharedDirector():getWinSize()
-
-	self._hero = Hero:_create()
+    
+	self._hero = loadstring("return ".."Saber".."._create()")()
 	self._hero :setPosition(winSize.width/2,winSize.height/2)
 	self._hero:setDesiredPosition(self._hero :getPosition())
 
