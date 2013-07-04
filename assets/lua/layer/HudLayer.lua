@@ -21,9 +21,12 @@ function HudLayer:_init()
     self.mButtonA=nil --按钮A
 	self.mJoystick =nil --摇杆
 	
+	local visibleSize = CCDirector:sharedDirector():getVisibleSize()
+    local origin = CCDirector:sharedDirector():getVisibleOrigin()
+	
 	--关闭按钮
 	local pCloseItem = CCMenuItemImage:create("images/CloseNormal.png","images/CloseSelected.png" )
-	pCloseItem:setPosition(winSize.width-40,winSize.height-40)
+	pCloseItem:setPosition(origin.x+visibleSize.width-40,origin.y+visibleSize.height-40)
 	pCloseItem:registerScriptTapHandler(menuCallbackCloseItem)
 	local pMenu = CCMenu:createWithItem(pCloseItem)
 	pMenu:setPosition( 0,0 );
@@ -42,7 +45,7 @@ function HudLayer:_init()
 	local btnASkin =SneakyButtonSkinnedBase:create()
 	--btnASkin:autorelease()
 	btnASkin:init()
-	btnASkin:setPosition(winSize.width - 100, 50)
+	btnASkin:setPosition(origin.x+visibleSize.width - 100, origin.y+50)
 	btnASkin:setDefaultSprite(
 	CCSprite:createWithSpriteFrameName("button-default.png"))
 	btnASkin:setPressSprite(
@@ -69,7 +72,7 @@ function HudLayer:_init()
 	jstickSkin:setThumbSprite(CCSprite:createWithSpriteFrameName("JoyStick-thumb.png"))
 	jstickSkin:getThumbSprite():setScale(2.0)
 	jstickSkin:getBackgroundSprite():setScale(2.0);
-	jstickSkin:setPosition(JOYSTICK_POS_X, JOYSTICK_POS_Y)
+	jstickSkin:setPosition(origin.x+JOYSTICK_POS_X, origin.y+JOYSTICK_POS_Y)
 	jstickSkin:setJoystick(self.mJoystick)
 	self:addChild(jstickSkin)
 end
