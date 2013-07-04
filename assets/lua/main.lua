@@ -2,6 +2,7 @@ require "lua/extern"
 require "lua/Defines"
 
 require "lua/scene/GameScene"
+
 require "lua/layer/GameLayer"
 require "lua/layer/HudLayer"
 

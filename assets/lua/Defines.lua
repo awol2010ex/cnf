@@ -23,3 +23,11 @@ ActionState =CreatEnumTable(ActionState)
 
 InBtnState= {"IN_BTN_PRESSED", "IN_BTN_NO_PRESSED"}
 InBtnState =CreatEnumTable(InBtnState)
+
+
+InDirState= {
+	"IN_DIR_RIGHT", "IN_DIR_UP", 
+	"IN_DIR_LEFT", "IN_DIR_DOWN", 
+	"IN_DIR_NO_PRESSED"}
+	
+InDirState =CreatEnumTable(InDirState)

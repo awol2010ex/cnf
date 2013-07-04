@@ -11,13 +11,34 @@ function GameLayer:_init()
 	self._tileMap =nil--地图
 	self._instance =nil --图层实例
 	self._hero =nil --主角
-
+	self.mInDirLRState =InDirState.IN_DIR_NO_PRESSED
+	self.mInDirUDState =InDirState.IN_DIR_NO_PRESSED
+	self._velocity =CCPointMake(0,0)
 	--
 	--初始化地图
 	self:initTileMap();
 
 	--初始主角
 	self:initHero();
+
+
+	local that =self
+	--更新
+	local function updateLayer(dt)
+		that._hero:updateWhileWalk(dt)
+
+
+		--行走
+		if (InDirState.IN_DIR_NO_PRESSED~= that.mInDirLRState  or InDirState.IN_DIR_NO_PRESSED~= that.mInDirUDState) then
+			local v =that._velocity
+			that._hero:walkWithDirection(v)
+		else
+		    that._hero:idle() --站立
+		end
+	end
+
+
+	self:scheduleUpdateWithPriorityLua(updateLayer,1)
 
 end
 
@@ -47,11 +68,11 @@ end
 --初始化主角
 function GameLayer:initHero()
 	local winSize = CCDirector:sharedDirector():getWinSize()
-    
+
 	self._hero = loadstring("return ".."Saber".."._create()")()
 	self._hero :setPosition(winSize.width/2,winSize.height/2)
-	self._hero:setDesiredPosition(self._hero :getPosition())
-
+	self._hero:setDesiredPosition(ccp(self._hero :getPosition()))
+	self._hero:setWalkSpeed(160)
 	self:addChild(self._hero , -5);
 
 	self._hero:idle()
@@ -62,4 +83,22 @@ function GameLayer:setInBtnState(pBtnState)
 		cclog("press A")
 	end
 end
+--左右
+function GameLayer:setInDirLRState(pLeftRightState)
+
+	self.mInDirLRState = pLeftRightState;
+end
+--上下
+function GameLayer:setInDirUDState(pUpDownState)
+
+	self.mInDirUDState = pUpDownState;
+end
+--移动方向
+function GameLayer:setVelocity(v)
+
+	self._velocity = v;
+end
+
+
+
 

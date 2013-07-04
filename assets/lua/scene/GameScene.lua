@@ -14,11 +14,15 @@ function GameScene:_init()
     local that =self
     --按钮更新
     local function broadcastInput(dt)
-        that._gameLayer:setInBtnState(that._hudLayer:getInBtnState())
+        that._gameLayer:setInBtnState(that._hudLayer:getInBtnState())--按钮状态
+        
+        that._gameLayer:setInDirLRState(that._hudLayer:getInDirLRState())--左右
+	    that._gameLayer:setInDirUDState(that._hudLayer:getInDirUDState())--上下
+	    that._gameLayer:setVelocity(that._hudLayer.mJoystick:getVelocity())--上下
     end
     
     
-    self:scheduleUpdateWithPriorityLua(broadcastInput,0)
+    CCDirector:sharedDirector():getScheduler():scheduleScriptFunc(broadcastInput,1/32,false)
 end
 
 function GameScene._create()

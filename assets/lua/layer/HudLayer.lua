@@ -40,7 +40,7 @@ function HudLayer:_init()
 	CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("UI.plist")
 
 	local btnASkin =SneakyButtonSkinnedBase:create()
-	btnASkin:autorelease()
+	--btnASkin:autorelease()
 	btnASkin:init()
 	btnASkin:setPosition(winSize.width - 100, 50)
 	btnASkin:setDefaultSprite(
@@ -63,7 +63,7 @@ function HudLayer:_init()
 	self.mJoystick:setDeadRadius(JOYSTICK_DEAD_RADIUS)
 	
 	local jstickSkin = SneakyJoystickSkinnedBase:create()
-	jstickSkin:autorelease()
+	--jstickSkin:autorelease()
 	jstickSkin:init()
 	jstickSkin:setBackgroundSprite(CCSprite:createWithSpriteFrameName("JoyStick-base.png"))
 	jstickSkin:setThumbSprite(CCSprite:createWithSpriteFrameName("JoyStick-thumb.png"))
@@ -82,7 +82,7 @@ end
 
 
 
-
+--按钮状态
 function HudLayer:getInBtnState()
     local retState =InBtnState.IN_BTN_NO_PRESSED
     
@@ -91,4 +91,58 @@ function HudLayer:getInBtnState()
 		retState =InBtnState.IN_BTN_PRESSED
     end
 	return retState
+end
+
+
+--左右
+function HudLayer:getInDirLRState()
+
+	local velocity = self.mJoystick:getVelocity()
+
+    local left =false 
+    if  velocity.x <= -JOYSTICK_THRESHOLD then 
+       left =true
+    end
+    
+    local right =false
+    if velocity.x >= JOYSTICK_THRESHOLD  then
+        right =true
+    end
+
+	local retState = InDirState.IN_DIR_NO_PRESSED
+	if left then
+		retState = InDirState.IN_DIR_LEFT
+	elseif right then
+		retState = InDirState.IN_DIR_RIGHT
+	else
+		retState = InDirState.IN_DIR_NO_PRESSED
+    end
+	return retState
+end
+
+--上下
+function HudLayer:getInDirUDState()
+
+	local velocity = self.mJoystick:getVelocity()
+	
+    local up =false
+    if velocity.y >= JOYSTICK_THRESHOLD then
+       up =true
+    end
+    
+    local down =false
+    if velocity.y <= -JOYSTICK_THRESHOLD then
+       down =true
+    end
+
+	local retState = InDirState.IN_DIR_NO_PRESSED
+	if up then
+		retState = InDirState.IN_DIR_UP
+	elseif down then
+		retState = InDirState.IN_DIR_DOWN
+	else
+		retState = InDirState.IN_DIR_NO_PRESSED
+    end
+	return retState
+
 end
