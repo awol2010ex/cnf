@@ -3,7 +3,7 @@
 local function menuCallbackCloseItem()
 	CCDirector:sharedDirector():endToLua()
 end
-
+--摇杆位置
 JOYSTICK_POS_X = 100
 JOYSTICK_POS_Y = 100
 JOYSTICK_DEAD_RADIUS =10
@@ -40,7 +40,7 @@ function HudLayer:_init()
 	self.mButtonA:setIsHoldable(true);
 	
 	
-	CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("UI.plist")
+	CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("ui/UI.plist")
 
 	local btnASkin =SneakyButtonSkinnedBase:create()
 	--btnASkin:autorelease()
