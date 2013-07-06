@@ -85,7 +85,7 @@ end
 function ActionSprite:updateWhileWalk(dt)
 	if self._actionState == ActionState.kActionStateWalk then
 		self._desiredPosition = ccpAdd(ccp(self:getPosition()), ccpMult(self._velocity, dt))
-		self:setPosition(self._desiredPosition .x,self._desiredPosition.y)
+		
 	end
 end
 
@@ -99,4 +99,22 @@ end
 --将要移动的位置
 function  ActionSprite:getDesiredPosition()
     return self._desiredPosition
+end
+--状态
+function ActionSprite:getActionState()
+    return self._actionState
+end
+
+function ActionSprite:getCenterToBottom()
+    return self._centerToBottom
+end
+function ActionSprite:getCenterToSides()
+    return self._centerToSides
+end
+
+function ActionSprite:setCenterToBottom(p)
+    self._centerToBottom=p
+end
+function ActionSprite:setCenterToSides(p)
+    self._centerToSides=p
 end
