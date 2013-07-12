@@ -14,9 +14,9 @@ function GameLayer:_init()
 	self.mInDirLRState =InDirState.IN_DIR_NO_PRESSED
 	self.mInDirUDState =InDirState.IN_DIR_NO_PRESSED
 	self._velocity =CCPointMake(0,0)
-	
-	
-	
+
+
+
 	--batchNodes
 	self._actors = CCSpriteBatchNode:create("sprite/sprite.pvr.ccz");
 	self._actors:getTexture():setAliasTexParameters();
@@ -36,12 +36,15 @@ function GameLayer:_init()
 
 		--更新位置
 		that:updatePositions()
-		--行走
-		if (InDirState.IN_DIR_NO_PRESSED~= that.mInDirLRState  or InDirState.IN_DIR_NO_PRESSED~= that.mInDirUDState) then
-			local v =that._velocity
-			that._hero:walkWithDirection(v)
-		else
-			that._hero:idle() --站立
+		if that._hero._actionState == ActionState.kActionStateWalk or that._hero._actionState == ActionState.kActionStateIdle then
+			--行走
+			if (InDirState.IN_DIR_NO_PRESSED~= that.mInDirLRState  or InDirState.IN_DIR_NO_PRESSED~= that.mInDirUDState) then
+				local v =that._velocity
+				that._hero:walkWithDirection(v)
+			else
+				that._hero:idle() --站立
+			end
+
 		end
 	end
 
@@ -88,7 +91,7 @@ end
 
 function GameLayer:setInBtnState(pBtnState)
 	if pBtnState==InBtnState.IN_BTN_PRESSED then
-		cclog("press A")
+		self._hero:attack();
 	end
 end
 --左右

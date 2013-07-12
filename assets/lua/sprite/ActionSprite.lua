@@ -10,6 +10,8 @@ function ActionSprite:_init()
     self._idleAnimation =nil
     
 	self._attackAction = nil--攻击动作
+	self._attackFrames =nil
+	self._attackAnimation =nil
 	
 	self._walkAction = nil--行走动作
 	self._walkFrames =nil
@@ -45,6 +47,17 @@ end
 --攻击
 function ActionSprite:attack()
 
+  if (self._actionState == ActionState.kActionStateIdle or  self._actionState == ActionState.kActionStateAttack or self._actionState == ActionState.kActionStateWalk) then
+	
+		self:stopAllActions();
+		
+		
+		self:runAction(self._attackAction);
+		
+		
+		self._actionState = ActionState.kActionStateAttack;
+		
+	end
 end
 --将要移动的位置
 function ActionSprite:setDesiredPosition(p)
