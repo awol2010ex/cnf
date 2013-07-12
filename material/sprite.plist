@@ -7,106 +7,249 @@
             <key>saber_idle0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,873},{102,117}}</string>
+                <string>{{121,615},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,1}</string>
+                <string>{2,-2}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{102,117}}</string>
+                <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{121,779},{102,117}}</string>
+                <string>{{240,518},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,1}</string>
+                <string>{2,-2}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{102,117}}</string>
+                <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle10.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{127,399},{110,119}}</string>
+                <key>offset</key>
+                <string>{-1,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,4},{110,119}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle11.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{377,398},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle12.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{252,352},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle13.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{127,337},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle14.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,337},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle15.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{379,336},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle16.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{254,290},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle17.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{266,115},{60,125}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,0},{60,125}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle18.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,399},{60,123}}</string>
+                <key>offset</key>
+                <string>{26,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{52,1},{60,123}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,769},{102,117}}</string>
+                <string>{{367,460},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{2,-3}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,1},{102,117}}</string>
+                <string>{{7,7},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{121,675},{102,117}}</string>
+                <string>{{2,565},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,-1}</string>
+                <string>{2,-4}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,2},{102,117}}</string>
+                <string>{{7,8},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,665},{102,117}}</string>
+                <string>{{121,511},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,-1}</string>
+                <string>{2,-4}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,2},{102,117}}</string>
+                <string>{{7,8},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{121,571},{102,117}}</string>
+                <string>{{248,414},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{2,-3}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,1},{102,117}}</string>
+                <string>{{7,7},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,561},{102,117}}</string>
+                <string>{{2,461},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,1}</string>
+                <string>{2,-2}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{102,117}}</string>
+                <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
             </dict>
             <key>saber_idle7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{128,467},{102,117}}</string>
+                <string>{{392,232},{102,117}}</string>
                 <key>offset</key>
-                <string>{0,1}</string>
+                <string>{2,-2}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{102,117}}</string>
+                <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
-                <string>{102,119}</string>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{393,128},{102,117}}</string>
+                <key>offset</key>
+                <string>{2,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{7,6},{102,117}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
+            </dict>
+            <key>saber_idle9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{121,615},{102,117}}</string>
+                <key>offset</key>
+                <string>{2,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{7,6},{102,117}}</string>
+                <key>sourceSize</key>
+                <string>{112,125}</string>
             </dict>
             <key>saber_walk0.png</key>
             <dict>
@@ -124,7 +267,7 @@
             <key>saber_walk1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,117},{126,111}}</string>
+                <string>{{266,2},{126,111}}</string>
                 <key>offset</key>
                 <string>{1,-1}</string>
                 <key>rotated</key>
@@ -137,7 +280,7 @@
             <key>saber_walk10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,117},{126,111}}</string>
+                <string>{{266,2},{126,111}}</string>
                 <key>offset</key>
                 <string>{1,-1}</string>
                 <key>rotated</key>
@@ -150,7 +293,7 @@
             <key>saber_walk2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{130,243},{124,111}}</string>
+                <string>{{266,177},{124,111}}</string>
                 <key>offset</key>
                 <string>{3,-1}</string>
                 <key>rotated</key>
@@ -163,11 +306,11 @@
             <key>saber_walk3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{130,130},{124,111}}</string>
+                <string>{{394,2},{124,111}}</string>
                 <key>offset</key>
                 <string>{4,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{10,2},{124,111}}</string>
                 <key>sourceSize</key>
@@ -180,7 +323,7 @@
                 <key>offset</key>
                 <string>{4,-1}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{9,2},{126,111}}</string>
                 <key>sourceSize</key>
@@ -189,7 +332,7 @@
             <key>saber_walk5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,230},{126,109}}</string>
+                <string>{{138,115},{126,109}}</string>
                 <key>offset</key>
                 <string>{5,-2}</string>
                 <key>rotated</key>
@@ -202,7 +345,7 @@
             <key>saber_walk6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,452},{124,107}}</string>
+                <string>{{2,228},{124,107}}</string>
                 <key>offset</key>
                 <string>{6,-3}</string>
                 <key>rotated</key>
@@ -215,7 +358,7 @@
             <key>saber_walk7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{128,356},{124,109}}</string>
+                <string>{{128,226},{124,109}}</string>
                 <key>offset</key>
                 <string>{5,-2}</string>
                 <key>rotated</key>
@@ -228,7 +371,7 @@
             <key>saber_walk8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,341},{124,109}}</string>
+                <string>{{2,117},{124,109}}</string>
                 <key>offset</key>
                 <string>{4,-2}</string>
                 <key>rotated</key>
@@ -241,7 +384,7 @@
             <key>saber_walk9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{130,243},{124,111}}</string>
+                <string>{{266,177},{124,111}}</string>
                 <key>offset</key>
                 <string>{3,-1}</string>
                 <key>rotated</key>
@@ -257,13 +400,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>saber.pvr.ccz</string>
+            <string>sprite.pvr.ccz</string>
             <key>size</key>
-            <string>{256,1024}</string>
+            <string>{512,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:dd8afaba8d754b04fd5c2e965254f31e$</string>
+            <string>$TexturePacker:SmartUpdate:123110c39804229b4042c1ca5bd273d8$</string>
             <key>textureFileName</key>
-            <string>saber.pvr.ccz</string>
+            <string>sprite.pvr.ccz</string>
         </dict>
     </dict>
 </plist>

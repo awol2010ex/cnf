@@ -14,6 +14,13 @@ function GameLayer:_init()
 	self.mInDirLRState =InDirState.IN_DIR_NO_PRESSED
 	self.mInDirUDState =InDirState.IN_DIR_NO_PRESSED
 	self._velocity =CCPointMake(0,0)
+	
+	
+	
+	--batchNodes
+	self._actors = CCSpriteBatchNode:create("sprite/sprite.pvr.ccz");
+	self._actors:getTexture():setAliasTexParameters();
+	self:addChild(self._actors, -5);
 	--
 	--初始化地图
 	self:initTileMap();
@@ -74,7 +81,7 @@ function GameLayer:initHero()
 	self._hero :setPosition(winSize.width/2,winSize.height/2-100)
 	self._hero:setDesiredPosition(ccp(self._hero :getPosition()))
 
-	self:addChild(self._hero , -5);
+	self._actors:addChild(self._hero );
 
 	self._hero:idle()
 end
@@ -104,7 +111,6 @@ function GameLayer:updatePositions()
 	--英雄位置更新
 	if self._hero:getActionState() == ActionState.kActionStateWalk then
 		--self._hero :setPosition(self._hero:getDesiredPosition().x,self._hero:getDesiredPosition().y)
-         cclog("x:%f,y:%f",self._hero:getDesiredPosition().x,self._hero:getDesiredPosition().y)
 		local posX = math.min(
 		self._tileMap:getPositionX()+  self._tileMap:getMapSize().width * self._tileMap:getTileSize().width- self._hero:getCenterToSides(),
 		math.max(self._hero:getCenterToSides()+self._tileMap:getPositionX(),self._hero:getDesiredPosition().x)
@@ -118,7 +124,6 @@ function GameLayer:updatePositions()
 		--[[ 获得当前主角在地图中的格子位置 ]]--
 		local tiledPos = self:tileCoordForPosition(ccp(posX-self._tileMap:getPositionX(), posY-self._tileMap:getPositionY()));
 		--[[ 获取地图格子的唯一标识 ]]--
-		cclog("x:%f,y:%f,width:%f,height:%f",tiledPos.x,tiledPos.y,self._tileMap:getMapSize().width,self._tileMap:getMapSize().height)
 		local tiledGid = wall:tileGIDAt(CCPointMake(tiledPos.x,tiledPos.y));
 
 		if tiledGid == 0 then

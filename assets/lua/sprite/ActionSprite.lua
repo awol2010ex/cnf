@@ -37,7 +37,6 @@ end
 function ActionSprite:idle()
     if ActionState.kActionStateIdle ~=self._actionState then
         self:stopAllActions()
-        self:lazyInit()
 		self:runAction(self._idleAction)
 		self._actionState = ActionState.kActionStateIdle
 		self._velocity = CCPointMake(0,0)
@@ -62,7 +61,6 @@ function ActionSprite:walkWithDirection(direction)
 	if self._actionState == ActionState.kActionStateIdle then
 	    
 		self:stopAllActions()
-		self:lazyInit()
 		self:runAction(self._walkAction)
 		self._actionState = ActionState.kActionStateWalk
 	end
@@ -89,12 +87,6 @@ function ActionSprite:updateWhileWalk(dt)
 	end
 end
 
-function ActionSprite:lazyInit() --延迟初始化
-	if tolua.isnull(self._walkAction) or tolua.isnull(self._idleAction) then 
-	      cclog("lazyInit")
-		  self:_init()
-	end
-end
 
 --将要移动的位置
 function  ActionSprite:getDesiredPosition()

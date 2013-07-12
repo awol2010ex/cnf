@@ -4,6 +4,8 @@ end)
 GameScene.__index=GameScene
 
 function GameScene:_init()
+    CCSpriteFrameCache:sharedSpriteFrameCache():addSpriteFramesWithFile("sprite/sprite.plist")
+    
 	self._gameLayer =GameLayer._create()--游戏层
 	self._hudLayer =HudLayer._create()--操作层
 
