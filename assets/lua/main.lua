@@ -8,7 +8,7 @@ require "lua/layer/HudLayer"
 
 require "lua/sprite/ActionSprite"
 require "lua/sprite/Saber"
-
+require "lua/sprite/Ichigo"
 -- cclog
 cclog = function(...)
 	print(string.format(...))

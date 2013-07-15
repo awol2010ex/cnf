@@ -57,13 +57,43 @@ function Saber:_init()
 	self._attackFrames:retain()
 	local that =self 
 	local function callback()
-	    cclog("callback")
 	    that:idle()
 	end
 	self._attackAnimation = CCAnimation:createWithSpriteFrames(self._attackFrames ,1.0/12.0)
     self._attackAnimation:retain()
 	self._attackAction= CCSequence:createWithTwoActions(CCAnimate:create(self._attackAnimation ) ,CCCallFunc:create(callback) )
     self._attackAction:retain()
+    
+    
+    
+    
+    --攻击效果
+    --攻击效果 初始帧
+	local emptyFrame =CCSpriteFrameCache:sharedSpriteFrameCache():spriteFrameByName("saber_attack_hit_one0.png");
+    emptyFrame:setRect(CCRectMake(0, 0, 0, 0));
+    --emptyFrame:setOffset(CCPointMake(-162, 74));
+    self._hitSprite  =CCSprite:createWithSpriteFrame(emptyFrame)
+    self._hitSprite:retain()
+    
+	self._attackHitFrames = CCArray:create();
+	for  i = 0, 4, 1 do
+			frame =CCSpriteFrameCache:sharedSpriteFrameCache():spriteFrameByName("saber_attack_hit_one0.png");
+			--frame:setOffset(CCPointMake(-162, 74));
+            --frame:setOffset(CCPointMake(-93,-38))
+            if i==1 or i==3 then
+			   emptyFrame:setRect(CCRectMake(0, 0, 0, 0));
+			end
+			self._attackHitFrames:addObject(frame);
+			   
+	end
+	
+	--攻击效果
+	self._attackHitAnimation = CCAnimation:createWithSpriteFrames(
+				self._attackHitFrames, 1.0 / 12.0);
+
+	self._attackHitAction=CCAnimate:create(self._attackHitAnimation ) 
+	self._attackHitAction:retain();
+	
 end
 
 function Saber:_create()

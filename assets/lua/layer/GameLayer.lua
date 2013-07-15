@@ -80,12 +80,15 @@ end
 function GameLayer:initHero()
 	local winSize = CCDirector:sharedDirector():getWinSize()
 
-	self._hero = loadstring("return ".."Saber".."._create()")()
+	self._hero = loadstring("return ".."Ichigo".."._create()")()
 	self._hero :setPosition(winSize.width/2,winSize.height/2-100)
 	self._hero:setDesiredPosition(ccp(self._hero :getPosition()))
 
 	self._actors:addChild(self._hero );
-
+	if not tolua.isnull(self._hero:getHitSprite())  then
+	    self._hero:getHitSprite():setPosition(self._hero :getPositionX(),self._hero :getPositionY())
+		self._actors:addChild(self._hero:getHitSprite() );--攻击效果
+	end
 	self._hero:idle()
 end
 
@@ -132,6 +135,9 @@ function GameLayer:updatePositions()
 		if tiledGid == 0 then
 
 			self._hero:setPosition(posX, posY);
+			if not tolua.isnull(self._hero:getHitSprite())  then
+				self._hero:getHitSprite():setPosition(posX, posY);--攻击效果
+			end
 		end
 
 	end

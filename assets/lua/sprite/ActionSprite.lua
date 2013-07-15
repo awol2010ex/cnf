@@ -28,8 +28,16 @@ function ActionSprite:_init()
 	self._walkSpeed =80--步速
 	
 	
-	
+	self._hitSprite =nil--攻击效果
+	self._attackHitFrames =nil
+	self._attackHitAnimation =nil
+	self._attackHitAction =nil
 end
+
+function ActionSprite:getHitSprite()
+    return self._hitSprite 
+end
+
 function ActionSprite._createWithSpriteFrameName(_frameName)
 	local o=ActionSprite.new(_frameName)
 	o:_init()
@@ -39,6 +47,11 @@ end
 function ActionSprite:idle()
     if ActionState.kActionStateIdle ~=self._actionState then
         self:stopAllActions()
+        
+		if not tolua.isnull(self:getHitSprite())  then 
+		   self:getHitSprite():stopAllActions();--停止攻击效果
+		end
+		
 		self:runAction(self._idleAction)
 		self._actionState = ActionState.kActionStateIdle
 		self._velocity = CCPointMake(0,0)
@@ -51,9 +64,17 @@ function ActionSprite:attack()
 	
 		self:stopAllActions();
 		
+		if not tolua.isnull(self:getHitSprite())  then 
+		   self:getHitSprite():stopAllActions();--停止攻击效果
+		end
+		
 		
 		self:runAction(self._attackAction);
 		
+		
+		if not tolua.isnull(self:getHitSprite())  then 
+		   self:getHitSprite():runAction(self._attackHitAction);--攻击效果
+		end
 		
 		self._actionState = ActionState.kActionStateAttack;
 		
@@ -74,6 +95,11 @@ function ActionSprite:walkWithDirection(direction)
 	if self._actionState == ActionState.kActionStateIdle then
 	    
 		self:stopAllActions()
+		
+		if not tolua.isnull(self:getHitSprite())  then 
+		   self:getHitSprite():stopAllActions();--停止攻击效果
+		end
+		
 		self:runAction(self._walkAction)
 		self._actionState = ActionState.kActionStateWalk
 	end
@@ -83,10 +109,16 @@ function ActionSprite:walkWithDirection(direction)
 		if self._velocity.x >= 0 then 
 		
 			self:setScaleX(1.0)
-		
+		    if not tolua.isnull(self:getHitSprite())  then 
+		       self:getHitSprite():setScaleX(1.0);--攻击效果
+		    end
 		else
 		
 			self:setScaleX(-1.0)
+			
+			if not tolua.isnull(self:getHitSprite())  then 
+		       self:getHitSprite():setScaleX(-1.0);--攻击效果
+		    end
 		end
 		
 	end

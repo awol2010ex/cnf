@@ -4,14 +4,1379 @@
     <dict>
         <key>frames</key>
         <dict>
+            <key>ichigo_attack_one0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{354,871},{79,102}}</string>
+                <key>offset</key>
+                <string>{-32,-19}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,38},{79,102}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{271,871},{81,102}}</string>
+                <key>offset</key>
+                <string>{-32,-19}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,38},{81,102}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{354,871},{79,102}}</string>
+                <key>offset</key>
+                <string>{-32,-19}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,38},{79,102}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{608,2},{97,140}}</string>
+                <key>offset</key>
+                <string>{-4,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,0},{97,140}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{608,2},{97,140}}</string>
+                <key>offset</key>
+                <string>{-4,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,0},{97,140}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{602,101},{131,68}}</string>
+                <key>offset</key>
+                <string>{7,-36}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{14,72},{131,68}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{602,101},{131,68}}</string>
+                <key>offset</key>
+                <string>{7,-36}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{14,72},{131,68}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{602,101},{131,68}}</string>
+                <key>offset</key>
+                <string>{7,-36}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{14,72},{131,68}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{602,101},{131,68}}</string>
+                <key>offset</key>
+                <string>{7,-36}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{14,72},{131,68}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{127,445},{121,76}}</string>
+                <key>offset</key>
+                <string>{4,-32}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{16,64},{121,76}}</string>
+                <key>sourceSize</key>
+                <string>{145,140}</string>
+            </dict>
+            <key>ichigo_attack_one_hit0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{735,120},{130,87}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{130,87}}</string>
+                <key>sourceSize</key>
+                <string>{130,87}</string>
+            </dict>
+            <key>ichigo_attack_one_hit1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,662},{112,87}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{112,87}}</string>
+                <key>sourceSize</key>
+                <string>{112,87}</string>
+            </dict>
+            <key>ichigo_attack_one_hit2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{462,2},{74,144}}</string>
+                <key>offset</key>
+                <string>{13,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{26,0},{74,144}}</string>
+                <key>sourceSize</key>
+                <string>{100,144}</string>
+            </dict>
+            <key>ichigo_attack_one_hit3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{112,946},{74,72}}</string>
+                <key>offset</key>
+                <string>{13,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{26,0},{74,72}}</string>
+                <key>sourceSize</key>
+                <string>{100,72}</string>
+            </dict>
+            <key>ichigo_attack_one_hit4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{558,196},{74,38}}</string>
+                <key>offset</key>
+                <string>{13,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{26,0},{74,38}}</string>
+                <key>sourceSize</key>
+                <string>{100,38}</string>
+            </dict>
+            <key>ichigo_idle0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle10.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle11.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle12.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle13.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle14.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle15.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle16.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle17.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle18.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle19.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle20.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle21.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle22.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle23.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle24.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle25.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle26.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle27.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle28.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle29.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle30.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle31.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle32.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle33.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle34.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle35.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle36.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle37.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle38.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle39.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle40.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle41.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle42.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle43.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle44.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle45.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle46.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle47.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle48.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle49.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle50.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle51.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle52.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle53.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle54.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle55.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle56.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle57.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle58.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle59.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle60.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle61.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle62.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle63.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle64.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,541},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle65.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{87,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle66.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,836},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle67.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,751},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle68.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,731},{83,108}}</string>
+                <key>offset</key>
+                <string>{23,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{46,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle69.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{240,667},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle70.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{361,639},{83,108}}</string>
+                <key>offset</key>
+                <string>{22,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{83,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle71.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle72.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{743,539},{79,112}}</string>
+                <key>offset</key>
+                <string>{20,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,0},{79,112}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle73.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{743,458},{79,112}}</string>
+                <key>offset</key>
+                <string>{20,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,0},{79,112}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle74.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,946},{75,108}}</string>
+                <key>offset</key>
+                <string>{18,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{75,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle75.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{857,458},{111,78}}</string>
+                <key>offset</key>
+                <string>{-9,-17}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,34},{111,78}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle76.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{488,616},{109,78}}</string>
+                <key>offset</key>
+                <string>{-10,-17}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,34},{109,78}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle77.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{172,816},{107,80}}</string>
+                <key>offset</key>
+                <string>{-11,-16}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,32},{107,80}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle78.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{616,540},{109,78}}</string>
+                <key>offset</key>
+                <string>{-10,-17}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,34},{109,78}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle79.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{857,571},{109,78}}</string>
+                <key>offset</key>
+                <string>{-10,-17}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,34},{109,78}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,429},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle80.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,946},{75,108}}</string>
+                <key>offset</key>
+                <string>{18,-2}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,4},{75,108}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle81.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{743,458},{79,112}}</string>
+                <key>offset</key>
+                <string>{20,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,0},{79,112}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle82.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{743,539},{79,112}}</string>
+                <key>offset</key>
+                <string>{20,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{45,0},{79,112}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_idle9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,653},{83,110}}</string>
+                <key>offset</key>
+                <string>{22,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,2},{83,110}}</string>
+                <key>sourceSize</key>
+                <string>{129,112}</string>
+            </dict>
+            <key>ichigo_run0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{186,925},{83,90}}</string>
+                <key>offset</key>
+                <string>{-1,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,0},{83,90}}</string>
+                <key>sourceSize</key>
+                <string>{87,90}</string>
+            </dict>
+            <key>ichigo_run1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{356,765},{81,88}}</string>
+                <key>offset</key>
+                <string>{0,-1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{3,2},{81,88}}</string>
+                <key>sourceSize</key>
+                <string>{87,90}</string>
+            </dict>
+            <key>ichigo_run2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{439,765},{79,80}}</string>
+                <key>offset</key>
+                <string>{-4,-5}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,10},{79,80}}</string>
+                <key>sourceSize</key>
+                <string>{87,90}</string>
+            </dict>
+            <key>ichigo_run3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{937,345},{85,82}}</string>
+                <key>offset</key>
+                <string>{1,-4}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{2,8},{85,82}}</string>
+                <key>sourceSize</key>
+                <string>{87,90}</string>
+            </dict>
+            <key>ichigo_run4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{435,940},{83,82}}</string>
+                <key>offset</key>
+                <string>{2,-4}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{4,8},{83,82}}</string>
+                <key>sourceSize</key>
+                <string>{87,90}</string>
+            </dict>
+            <key>ichigo_run5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{435,855},{83,82}}</string>
+                <key>offset</key>
+                <string>{-2,-4}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,8},{83,82}}</string>
+                <key>sourceSize</key>
+                <string>{87,90}</string>
+            </dict>
+            <key>saber_attack_hit_one0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{286,158}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{286,158}}</string>
+                <key>sourceSize</key>
+                <string>{286,158}</string>
+            </dict>
             <key>saber_attack_one0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,120},{104,100}}</string>
+                <string>{{254,765},{104,100}}</string>
                 <key>offset</key>
                 <string>{-5,-6}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{52,16},{104,100}}</string>
                 <key>sourceSize</key>
@@ -20,11 +1385,11 @@
             <key>saber_attack_one1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,120},{104,100}}</string>
+                <string>{{254,765},{104,100}}</string>
                 <key>offset</key>
                 <string>{-11,-6}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{46,16},{104,100}}</string>
                 <key>sourceSize</key>
@@ -33,7 +1398,7 @@
             <key>saber_attack_one10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,108},{138,114}}</string>
+                <string>{{290,108},{138,114}}</string>
                 <key>offset</key>
                 <string>{-39,1}</string>
                 <key>rotated</key>
@@ -46,7 +1411,7 @@
             <key>saber_attack_one11.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{174,2},{138,116}}</string>
+                <string>{{462,78},{138,116}}</string>
                 <key>offset</key>
                 <string>{-40,2}</string>
                 <key>rotated</key>
@@ -59,7 +1424,7 @@
             <key>saber_attack_one12.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{314,2},{136,116}}</string>
+                <string>{{750,2},{136,116}}</string>
                 <key>offset</key>
                 <string>{-40,2}</string>
                 <key>rotated</key>
@@ -72,11 +1437,11 @@
             <key>saber_attack_one13.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,222},{102,118}}</string>
+                <string>{{504,408},{102,118}}</string>
                 <key>offset</key>
                 <string>{-32,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{26,2},{102,118}}</string>
                 <key>sourceSize</key>
@@ -85,11 +1450,11 @@
             <key>saber_attack_one2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,120},{104,100}}</string>
+                <string>{{254,765},{104,100}}</string>
                 <key>offset</key>
                 <string>{-5,-6}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{52,16},{104,100}}</string>
                 <key>sourceSize</key>
@@ -98,11 +1463,11 @@
             <key>saber_attack_one3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,120},{104,100}}</string>
+                <string>{{254,765},{104,100}}</string>
                 <key>offset</key>
                 <string>{-11,-6}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{46,16},{104,100}}</string>
                 <key>sourceSize</key>
@@ -111,11 +1476,11 @@
             <key>saber_attack_one4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,120},{104,100}}</string>
+                <string>{{254,765},{104,100}}</string>
                 <key>offset</key>
                 <string>{-8,-6}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{49,16},{104,100}}</string>
                 <key>sourceSize</key>
@@ -124,7 +1489,7 @@
             <key>saber_attack_one5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{170,104}}</string>
+                <string>{{290,2},{170,104}}</string>
                 <key>offset</key>
                 <string>{24,-4}</string>
                 <key>rotated</key>
@@ -137,7 +1502,7 @@
             <key>saber_attack_one6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{382,461},{124,108}}</string>
+                <string>{{128,273},{124,108}}</string>
                 <key>offset</key>
                 <string>{-30,-2}</string>
                 <key>rotated</key>
@@ -150,7 +1515,7 @@
             <key>saber_attack_one7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{138,236},{126,110}}</string>
+                <string>{{858,233},{126,110}}</string>
                 <key>offset</key>
                 <string>{-32,-1}</string>
                 <key>rotated</key>
@@ -163,7 +1528,7 @@
             <key>saber_attack_one8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{130,348},{124,112}}</string>
+                <string>{{685,322},{124,112}}</string>
                 <key>offset</key>
                 <string>{-32,0}</string>
                 <key>rotated</key>
@@ -176,7 +1541,7 @@
             <key>saber_attack_one9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{142,120},{134,114}}</string>
+                <string>{{888,2},{134,114}}</string>
                 <key>offset</key>
                 <string>{-38,1}</string>
                 <key>rotated</key>
@@ -189,11 +1554,11 @@
             <key>saber_idle0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{240,903},{102,117}}</string>
+                <string>{{121,627},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
@@ -202,7 +1567,7 @@
             <key>saber_idle1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{367,799},{102,117}}</string>
+                <string>{{242,563},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
@@ -215,7 +1580,7 @@
             <key>saber_idle10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{127,697},{110,119}}</string>
+                <string>{{2,446},{110,119}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
@@ -228,7 +1593,7 @@
             <key>saber_idle11.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{378,633},{60,123}}</string>
+                <string>{{379,369},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -241,7 +1606,7 @@
             <key>saber_idle12.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,674},{60,123}}</string>
+                <string>{{505,346},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -254,7 +1619,7 @@
             <key>saber_idle13.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{128,635},{60,123}}</string>
+                <string>{{2,384},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -267,7 +1632,7 @@
             <key>saber_idle14.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{253,630},{60,123}}</string>
+                <string>{{128,383},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -280,7 +1645,7 @@
             <key>saber_idle15.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{380,571},{60,123}}</string>
+                <string>{{254,335},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -293,7 +1658,7 @@
             <key>saber_idle16.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{128,573},{60,123}}</string>
+                <string>{{380,307},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -306,7 +1671,7 @@
             <key>saber_idle17.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{266,346},{60,125}}</string>
+                <string>{{558,284},{60,125}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -319,7 +1684,7 @@
             <key>saber_idle18.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{253,692},{60,123}}</string>
+                <string>{{253,397},{60,123}}</string>
                 <key>offset</key>
                 <string>{26,0}</string>
                 <key>rotated</key>
@@ -332,7 +1697,7 @@
             <key>saber_idle2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{121,913},{102,117}}</string>
+                <string>{{369,535},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-3}</string>
                 <key>rotated</key>
@@ -345,7 +1710,7 @@
             <key>saber_idle3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,840},{102,117}}</string>
+                <string>{{497,512},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-4}</string>
                 <key>rotated</key>
@@ -358,7 +1723,7 @@
             <key>saber_idle4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{121,809},{102,117}}</string>
+                <string>{{624,436},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-4}</string>
                 <key>rotated</key>
@@ -371,7 +1736,7 @@
             <key>saber_idle5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{248,754},{102,117}}</string>
+                <string>{{2,558},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-3}</string>
                 <key>rotated</key>
@@ -384,7 +1749,7 @@
             <key>saber_idle6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{378,695},{102,117}}</string>
+                <string>{{123,523},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
@@ -397,7 +1762,7 @@
             <key>saber_idle7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,736},{102,117}}</string>
+                <string>{{250,459},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
@@ -410,11 +1775,11 @@
             <key>saber_idle8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{406,342},{102,117}}</string>
+                <string>{{378,431},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
@@ -423,11 +1788,11 @@
             <key>saber_idle9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{240,903},{102,117}}</string>
+                <string>{{121,627},{102,117}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{7,6},{102,117}}</string>
                 <key>sourceSize</key>
@@ -436,7 +1801,7 @@
             <key>saber_walk0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,224},{134,113}}</string>
+                <string>{{888,118},{134,113}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -449,7 +1814,7 @@
             <key>saber_walk1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{278,233},{126,111}}</string>
+                <string>{{730,209},{126,111}}</string>
                 <key>offset</key>
                 <string>{1,-1}</string>
                 <key>rotated</key>
@@ -462,7 +1827,7 @@
             <key>saber_walk10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{278,233},{126,111}}</string>
+                <string>{{730,209},{126,111}}</string>
                 <key>offset</key>
                 <string>{1,-1}</string>
                 <key>rotated</key>
@@ -475,7 +1840,7 @@
             <key>saber_walk2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{256,408},{124,111}}</string>
+                <string>{{2,162},{124,111}}</string>
                 <key>offset</key>
                 <string>{3,-1}</string>
                 <key>rotated</key>
@@ -488,7 +1853,7 @@
             <key>saber_walk3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,450},{124,111}}</string>
+                <string>{{811,345},{124,111}}</string>
                 <key>offset</key>
                 <string>{4,-1}</string>
                 <key>rotated</key>
@@ -501,7 +1866,7 @@
             <key>saber_walk4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{278,120},{126,111}}</string>
+                <string>{{602,171},{126,111}}</string>
                 <key>offset</key>
                 <string>{4,-1}</string>
                 <key>rotated</key>
@@ -514,7 +1879,7 @@
             <key>saber_walk5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,339},{126,109}}</string>
+                <string>{{430,196},{126,109}}</string>
                 <key>offset</key>
                 <string>{5,-2}</string>
                 <key>rotated</key>
@@ -527,7 +1892,7 @@
             <key>saber_walk6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{254,521},{124,107}}</string>
+                <string>{{2,275},{124,107}}</string>
                 <key>offset</key>
                 <string>{6,-3}</string>
                 <key>rotated</key>
@@ -540,7 +1905,7 @@
             <key>saber_walk7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,563},{124,109}}</string>
+                <string>{{254,224},{124,109}}</string>
                 <key>offset</key>
                 <string>{5,-2}</string>
                 <key>rotated</key>
@@ -553,7 +1918,7 @@
             <key>saber_walk8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{128,462},{124,109}}</string>
+                <string>{{128,162},{124,109}}</string>
                 <key>offset</key>
                 <string>{4,-2}</string>
                 <key>rotated</key>
@@ -566,7 +1931,7 @@
             <key>saber_walk9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{256,408},{124,111}}</string>
+                <string>{{2,162},{124,111}}</string>
                 <key>offset</key>
                 <string>{3,-1}</string>
                 <key>rotated</key>
@@ -584,9 +1949,9 @@
             <key>realTextureFileName</key>
             <string>sprite.pvr.ccz</string>
             <key>size</key>
-            <string>{512,1024}</string>
+            <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b47058a232fd19a10a1b2c3498fa4713$</string>
+            <string>$TexturePacker:SmartUpdate:392e8051a041fb795c0f890591f2bdc6$</string>
             <key>textureFileName</key>
             <string>sprite.pvr.ccz</string>
         </dict>
