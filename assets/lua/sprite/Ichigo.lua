@@ -57,7 +57,7 @@ function Ichigo:_init()
 	self._attackFrames:retain()
 	local that =self 
 	local function callback()
-	cclog("callback")
+	    cclog("callback")
 	    that:idle()
 	end
 	self._attackAnimation = CCAnimation:createWithSpriteFrames(self._attackFrames ,1.0/12.0)
@@ -96,30 +96,25 @@ function Ichigo:_init()
 	end
 	 --攻击效果 初始帧
 	local emptyFrame =CCSpriteFrameCache:sharedSpriteFrameCache():spriteFrameByName("ichigo_attack_one_hit0.png");
-    emptyFrame:setRect(CCRectMake(0, 0, 0, 0));
-    --emptyFrame:setOffset(CCPointMake(-162, 74));
-    self._attackHitFrames:addObject(emptyFrame);
+    
 	
 	--攻击效果
 	self._attackHitAnimation = CCAnimation:createWithSpriteFrames(
 				self._attackHitFrames, 1.0 / 12.0);
 
-    local that2 =self
-    local function hideHitSprite()
-           cclog("hideHitSprite")
-           that2._hitSprite:setVisible(false)
-    end
 
     local _attackHitActionList =CCArray:create()
-    _attackHitActionList:addObject(CCDelayTime:create(2.0 / 12.0))
+    _attackHitActionList:addObject(CCDelayTime:create(1.0 / 12.0))
+    _attackHitActionList:addObject(CCShow:create())
     _attackHitActionList:addObject(CCAnimate:create(self._attackHitAnimation) )
-    _attackHitActionList:addObject(CCCallFunc:create(hideHitSprite) )
+    _attackHitActionList:addObject(CCHide:create())
     
 	self._attackHitAction=CCSequence:create(_attackHitActionList	 )
 	self._attackHitAction:retain();
 	
 	
 	self._hitSprite  =CCSprite:createWithSpriteFrame(emptyFrame)
+	self._hitSprite:setVisible(false)
     self._hitSprite:retain()
 	
 end
